@@ -1,0 +1,28 @@
+{
+  "name": "cherets",
+  "version": "1.0.0",
+  "description": "Che refresh TS memory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bokjo/cherets.git"
+  },
+  "author": "Bojanche Stojchevski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bokjo/cherets/issues"
+  },
+  "homepage": "https://github.com/bokjo/cherets#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1"
+  }
+}
