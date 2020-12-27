@@ -4,7 +4,9 @@
   "description": "Che refresh TS memory",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version:current": "echo $npm_package_version",
+    "release": "git add . && yarn version && VERSION=$(yarn -s version:current) && git push origin release/v$VERSION && git push origin v$VERSION && git checkout main && git pull --rebase origin main && git rebase release/v$VERSION && git push origin main && git checkout dev && git pull --rebase && git rebase release/v$VERSION && git push origin dev"
   },
   "repository": {
     "type": "git",
