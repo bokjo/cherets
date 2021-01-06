@@ -5,6 +5,6 @@ function generateError(message: string, code: number): never {
 generateError('ERROR', 420)
 type Che = string | number
 
-function test(n1: number): Che {
-  return 'Hehe';
+function tests(n1: number): Che {
+  return 'Hehe'
 }

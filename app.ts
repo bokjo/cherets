@@ -1,5 +1,14 @@
-function generateError(message: string, code: number): never {
+function generateErrorS(message: string, code: number): never {
   throw { message, errorCode: code }
 }
 
-generateError('ERROR', 420)
+const persons = {
+  age: 21,
+  test: 'test',
+}
+
+const { age, test }: { age: number; test: string } = persons
+
+console.log('Age => Test', age, test)
+
+generateErrorS('ERROR', 420)
